@@ -127,7 +127,7 @@ class _MessagesState extends State<Messages> {
         return Padding(
           padding:  EdgeInsets.only(bottom: 15),
           child: GestureDetector(
-            child: Card(
+            child: Card(shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
                 margin: EdgeInsets.fromLTRB(0.0, 2.0, 0.0, 0.0),
                 elevation: 0.5,
                 child: Container(

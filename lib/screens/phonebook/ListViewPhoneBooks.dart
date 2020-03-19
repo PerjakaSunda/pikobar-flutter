@@ -32,8 +32,8 @@ class ListViewPhoneBooks extends StatelessWidget {
     }
 
     Widget _card(DocumentSnapshot document) {
-      return Card(
-          elevation: 2,
+      return Card(shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+          elevation: 1,
           child: Padding(
             padding: EdgeInsets.all(10),
             child: _cardTile(document),
@@ -81,8 +81,8 @@ class ListViewPhoneBooks extends StatelessWidget {
             'emergency_phone.png',
             Dictionary.phoneBookEmergencyInformation,
             Dictionary.phoneBookEmergencyInformationCaption),
-        Card(
-          elevation: 2,
+        Card(shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+          elevation: 1,
           child: Padding(
             padding: const EdgeInsets.all(10.0),
             child: ListTile(
@@ -98,8 +98,8 @@ class ListViewPhoneBooks extends StatelessWidget {
         SizedBox(
           height: 10,
         ),
-        Card(
-          elevation: 2,
+        Card(shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+          elevation: 1,
           child: Padding(
             padding: const EdgeInsets.all(10.0),
             child: ListTile(
